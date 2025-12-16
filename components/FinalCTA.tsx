@@ -5,7 +5,7 @@ export default function FinalCTA() {
   return (
     <section className="px-6 py-24 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+        <h2 className="text-xl md:text-xl font-semibold mb-6">
           Ready to Land Your Dream Job?
         </h2>
 

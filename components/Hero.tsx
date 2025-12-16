@@ -3,7 +3,8 @@ import HeroTemplates from "@/components/HeroTemplates";
 export default function Hero() {
   return (
     <section className="px-6 pt-24 pb-32">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
         
         {/* LEFT CONTENT */}
         <div className="max-w-xl">
@@ -11,21 +12,16 @@ export default function Hero() {
   <span className="inline-flex items-center gap-2 px-4 py-1.5 text-sm font-medium text-blue-600 bg-blue-50 rounded-full mb-6">
     ⚡ AI-Powered Resume Creation
   </span>
+<h1 className="text-xl md:text-xl font-extrabold text-gray-900 md:whitespace-nowrap">
+  Land Your Dream Job with AI-Crafted Resumes
+ 
+</h1>
 
-  {/* Heading */}
-  <h1 className="text-5xl font-extrabold leading-tight text-gray-900">
-    Land Your Dream Job with
-    <br />
-    <span className="text-gray-900">AI-Crafted Resumes</span>
-  </h1>
-
-  {/* Description */}
-  <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-    Create ATS-friendly, professionally designed resumes in minutes.
-    Our AI analyzes job descriptions and optimizes your resume for
-    maximum impact.
-  </p>
-
+<p className="mt-5 text-lg text-gray-600 max-w-xl">
+  Create ATS-friendly, professionally designed resumes in minutes.
+  Our AI analyzes job descriptions and optimizes your resume for
+  maximum impact.
+</p>
   {/* Feature list */}
   <ul className="mt-6 space-y-3">
     <li className="flex items-center gap-3 text-gray-700">

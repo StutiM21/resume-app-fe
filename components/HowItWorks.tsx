@@ -27,7 +27,7 @@ export default function HowItWorks() {
     <section className="px-8 py-20 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-xl md:text-xl font-bold mb-4">
           Your Perfect Resume in 3 Simple Steps
         </h2>
         <p className="text-gray-600 mb-16 max-w-3xl mx-auto">

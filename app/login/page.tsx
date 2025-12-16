@@ -37,7 +37,8 @@ export default function LoginPage() {
   return (
     <div className="min-h-dvh grid grid-cols-1 md:grid-cols-2">
       {/* Left aqua panel */}
-      <div className="hidden md:block bg-cyan-400" />
+      <div className="hidden md:block bg-gradient-to-br from-blue-600 to-purple-600" />
+
 
       {/* Right content */}
       <div className="flex items-center justify-center bg-white px-6 py-12">
@@ -46,7 +47,7 @@ export default function LoginPage() {
           <div className="flex flex-col items-center gap-3">
             <button
               type="button"
-              className="flex items-center gap-2 rounded-full bg-cyan-500 px-5 py-2 text-sm font-medium text-white shadow hover:bg-cyan-600"
+              className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-2 text-sm font-medium text-white shadow hover:opacity-90 transition"
               onClick={() => signIn("linkedin", { callbackUrl: "/" })}
             >
               <Image src="/linkedin.svg" alt="LinkedIn" width={16} height={16} />
@@ -55,7 +56,7 @@ export default function LoginPage() {
             <span className="text-xs text-gray-500">OR</span>
             <button
               type="button"
-              className="flex items-center gap-2 rounded-full bg-cyan-500 px-5 py-2 text-sm font-medium text-white shadow hover:bg-cyan-600"
+              className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-2 text-sm font-medium text-white shadow hover:opacity-90 transition"
               onClick={() => signIn("google", { callbackUrl: "/" })}
             >
               <Image src="/google.svg" alt="Google" width={16} height={16} />
@@ -121,7 +122,7 @@ export default function LoginPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="rounded-full bg-cyan-500 px-8 py-2.5 text-white shadow hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-2 text-sm font-medium text-white shadow hover:opacity-90 transition"
                 >
                   {isSubmitting ? "Signing in…" : "Sign In"}
                 </button>

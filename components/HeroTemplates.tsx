@@ -4,20 +4,38 @@ import { Eye } from "lucide-react";
 
 export default function HeroTemplates() {
   return (
-    <div className="relative w-full h-[420px] flex items-center justify-center">
-      
-      {/* LEFT (tilted) */}
-      <div className="absolute left-6 top-16 w-[220px] rotate-[-8deg] z-10">
+    <div className="relative w-full h-[420px] flex items-center justify-center overflow-visible">
+
+      {/* LEFT CARD */}
+      <div
+        className="
+          absolute
+          w-[240px] h-[340px]
+          -translate-x-[140px]
+          rotate-[-8deg]
+          z-10
+          md:-translate-x-[180px]
+        "
+      >
         <TemplateCard color="bg-blue-600" />
       </div>
 
-      {/* CENTER (main) */}
-      <div className="absolute z-20 w-[260px]">
+      {/* CENTER CARD */}
+      <div className="relative w-[280px] h-[380px] z-20">
         <TemplateCard color="bg-purple-600" />
       </div>
 
-      {/* RIGHT (tilted) */}
-      <div className="absolute right-6 top-20 w-[220px] rotate-[8deg] z-10">
+      {/* RIGHT CARD */}
+      <div
+        className="
+          absolute
+          w-[240px] h-[340px]
+          translate-x-[140px]
+          rotate-[8deg]
+          z-10
+          md:translate-x-[180px]
+        "
+      >
         <TemplateCard color="bg-slate-800" />
       </div>
     </div>
@@ -26,15 +44,18 @@ export default function HeroTemplates() {
 
 function TemplateCard({ color }: { color: string }) {
   return (
-    <div className="relative h-[420px] rounded-2xl bg-white shadow-xl overflow-hidden group">
+    <div className="relative w-full h-full rounded-2xl bg-white shadow-xl overflow-hidden group">
+      
+      {/* Header */}
+      <div className={`h-16 ${color}`} />
 
-      <div className={`h-14 ${color}`} />
-
-      <div className="p-4 space-y-2">
-        <div className="h-3 w-24 bg-gray-300 rounded" />
+      {/* Content */}
+      <div className="p-5 space-y-3">
+        <div className="h-3 w-28 bg-gray-300 rounded" />
         <div className="h-3 w-full bg-gray-200 rounded" />
         <div className="h-3 w-5/6 bg-gray-200 rounded" />
         <div className="h-3 w-4/6 bg-gray-200 rounded" />
+        <div className="h-3 w-3/6 bg-gray-200 rounded" />
       </div>
 
       {/* Hover Overlay */}

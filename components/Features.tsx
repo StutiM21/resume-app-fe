@@ -45,7 +45,7 @@ export default function Features() {
   return (
     <section className="px-8 py-20 bg-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-xl md:text-xl font-bold mb-4">
           Everything You Need to Stand Out
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto mb-14">
@@ -53,7 +53,9 @@ export default function Features() {
           land more interviews.
         </p>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+
           {features.map((item, idx) => (
             <div
               key={idx}

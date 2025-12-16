@@ -1,22 +1,19 @@
-// app/layout.tsx
 import "./globals.css";
-import type { ReactNode } from "react";
+import { Inter } from "next/font/google";
 
-export const metadata = {
-  title: "ResumeAI",
-  description: "AI Resume Builder Landing Page",
-};
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 export default function RootLayout({
   children,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

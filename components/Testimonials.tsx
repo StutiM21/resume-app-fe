@@ -29,7 +29,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-xl md:text-xl font-bold mb-4">
             Loved by Job Seekers Worldwide
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
